@@ -22,6 +22,12 @@
     .nav-logo img{height:56px;display:block;}
     .nav-hub a{font-family:'Diodrum Rounded','Nunito',Arial,sans-serif;font-weight:700;font-size:14px;color:var(--oe-text);text-transform:uppercase;letter-spacing:.5px;padding:8px 16px;border-radius:24px;border:2px solid var(--oe-border);}
     .nav-hub a:hover{background:var(--oe-light);border-color:var(--oe-blue);color:var(--oe-navy);}
+    .breadcrumbs{ background:var(--oe-light); border-bottom:1px solid var(--oe-border); }
+    .breadcrumbs-inner{ max-width:1400px; margin:0 auto; padding:12px 30px; font-size:13px; color:var(--oe-muted); }
+    .breadcrumbs a{ color:var(--oe-navy); font-weight:600; }
+    .breadcrumbs a:hover{ color:var(--oe-blue-text); }
+    .breadcrumbs .sep{ margin:0 8px; color:var(--oe-border); }
+    .breadcrumbs .current{ color:var(--oe-muted); font-weight:600; }
 
     .page-banner{ background:var(--oe-navy); color:var(--oe-white); position:relative; overflow:hidden; }
     .page-banner::before{ content:''; position:absolute; inset:0; background:linear-gradient(135deg,transparent,rgba(1,171,238,0.12)); }
@@ -70,6 +76,8 @@
   </div>
 </header>
 
+<div class="breadcrumbs"><div class="breadcrumbs-inner"><a href="https://www.oeservices.ca">Home</a><span class="sep">›</span><span class="current">Team Hub</span></div></div>
+
 <main>
   <section class="page-banner">
     <div class="page-banner-inner">
@@ -91,6 +99,7 @@
           <span class="card-cta">View the contest &rarr;</span>
         </div>
       </a>
+      <a class="hub-card" href="/logos"><div class="card-banner" style="display:flex;align-items:center;justify-content:center;min-height:150px;padding:24px;"><img src="/assets/logos/OE_logo_30th_RGB_rev.png" alt="OE Utility Services logo" style="max-width:78%;height:auto;width:auto;" /></div><div class="card-body"><span class="card-tag">Brand</span><h3>OE Logo Downloads</h3><p>Download official OE Utility Services logo files in colour, white, and black.</p><span class="card-cta">Get the logos &rarr;</span></div></a>
     </div>
   </div>
 </main>

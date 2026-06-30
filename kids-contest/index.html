@@ -33,6 +33,12 @@
       border:2px solid var(--oe-border);transition:background .2s,border-color .2s,color .2s;
     }
     .nav-hub a:hover{background:var(--oe-light);border-color:var(--oe-blue);color:var(--oe-navy);}
+    .breadcrumbs{ background:var(--oe-light); border-bottom:1px solid var(--oe-border); }
+    .breadcrumbs-inner{ max-width:1400px; margin:0 auto; padding:12px 30px; font-size:13px; color:var(--oe-muted); }
+    .breadcrumbs a{ color:var(--oe-navy); font-weight:600; }
+    .breadcrumbs a:hover{ color:var(--oe-blue-text); }
+    .breadcrumbs .sep{ margin:0 8px; color:var(--oe-border); }
+    .breadcrumbs .current{ color:var(--oe-muted); font-weight:600; }
 
     /* contest content wrapper */
     .contest-wrap{max-width:960px;margin:0 auto;padding:30px 20px 10px;}
@@ -79,6 +85,8 @@
     </div>
   </div>
 </header>
+
+<div class="breadcrumbs"><div class="breadcrumbs-inner"><a href="https://www.oeservices.ca">Home</a><span class="sep">›</span><a href="/">Team Hub</a><span class="sep">›</span><span class="current">Kids Colouring Contest</span></div></div>
 
 <main>
   <section class="page-banner">
