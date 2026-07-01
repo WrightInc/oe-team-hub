@@ -63,7 +63,9 @@
     footer{background:var(--oe-navy-dark);color:var(--oe-white);}
     .footer-body{max-width:1400px;margin:0 auto;padding:48px 30px 30px;text-align:center;}
     .footer-logo img{height:52px;margin-bottom:14px;}
-    .footer-teamhub{ display:inline-block; font-family:'Diodrum Rounded','Nunito',sans-serif; font-weight:700; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--oe-blue); margin-bottom:14px; }
+    .footer-divider{ display:flex; align-items:center; justify-content:center; gap:16px; max-width:280px; margin:0 auto 14px; }
+    .footer-divider::before, .footer-divider::after{ content:''; flex:1; height:1px; background:rgba(255,255,255,.18); }
+    .footer-teamhub{ font-family:'Diodrum Rounded','Nunito',sans-serif; font-weight:700; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,.6); white-space:nowrap; }
     .footer-teamhub:hover{ color:#fff; }
     .footer-tagline{font-size:14px;line-height:1.7;opacity:.85;max-width:560px;margin:0 auto;text-align:center;}
     .footer-tagline-cta{display:inline-block;margin-top:4px;letter-spacing:.04em;}
@@ -154,7 +156,7 @@
     <div class="footer-logo">
       <a href="https://www.oeservices.ca"><img src="https://lirp.cdn-website.com/7f93686c/dms3rep/multi/opt/OE_logo_30th_RGB_rev-1920w.png" alt="OE Utility Services" /></a>
     </div>
-    <a href="/" class="footer-teamhub">Team Hub</a>
+    <div class="footer-divider"><a href="/" class="footer-teamhub">Team Hub</a></div>
     <p class="footer-tagline">Integrated utility infrastructure services across Ontario for 30 years.<br>One call. One team.<br><strong class="footer-tagline-cta">GET MORE OUT.</strong></p>
   </div>
   <div class="footer-bottom">
