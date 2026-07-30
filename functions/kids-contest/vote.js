@@ -15,7 +15,7 @@ function closedPage() {
   return pageShell("Voting Closed", `
     <div class="warn">&#128683;</div>
     <h1>Voting has closed</h1>
-    <p>Employee voting ended on August 4, 2026. Winners will be announced on August 10, 2026.</p>
+    <p>Employee voting ended on August 9, 2026. Winners will be announced on August 10, 2026.</p>
     <a class="btn btn-back" href="/kids-contest/gallery/">&larr; Back to the Gallery</a>`);
 }
 
@@ -56,7 +56,7 @@ export async function onRequestGet(context) {
       <button class="btn" type="submit">Confirm my vote</button>
     </form>
     <a class="btn btn-back" href="/kids-contest/gallery/">Cancel &mdash; back to the Gallery</a>
-    <p class="small">One vote per employee, per category. Voting closes end of day August 4, 2026.</p>`);
+    <p class="small">One vote per employee, per category. Voting closes end of day August 9, 2026.</p>`);
   return new Response(body, { headers: { "Content-Type": "text/html; charset=utf-8" } });
 }
 
@@ -87,7 +87,7 @@ export async function onRequestPost(context) {
   await kv.put(voteKey, String(current + 1));
   await kv.put(ipKey, String(ipCount + 1));
 
-  const expires = new Date("2026-08-05T04:00:00Z").toUTCString();
+  const expires = new Date("2026-08-10T04:00:00Z").toUTCString();
   const body = pageShell("Vote Recorded", `
     <div class="tick">&#10003;</div>
     <h1>Your vote has been recorded</h1>

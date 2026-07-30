@@ -13,6 +13,8 @@ export const ENTRIES = {
   9:  { name: "Ryan",    age: "13",  cat: "12-17" },
   10: { name: "Tyler",   age: "14",  cat: "12-17" },
   11: { name: "Sienna",  age: "16",  cat: "12-17" },
+  12: { name: "Cameron", age: "4",   cat: "1-5" },
+  13: { name: "Justin",  age: "10",  cat: "6-11" },
 };
 
 export const CATS = {
@@ -21,8 +23,8 @@ export const CATS = {
   "12-17": "Ages 12\u201317",
 };
 
-// Voting closes end of day August 4, 2026, Eastern Time.
-export const VOTING_CLOSES_UTC = Date.parse("2026-08-05T03:59:59Z");
+// Voting closes end of day August 9, 2026, Eastern Time.
+export const VOTING_CLOSES_UTC = Date.parse("2026-08-10T03:59:59Z");
 
 export function votingOpen() {
   return Date.now() <= VOTING_CLOSES_UTC;

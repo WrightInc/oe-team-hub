@@ -32,7 +32,7 @@ export async function onRequestGet(context) {
   }
 
   const status = votingOpen()
-    ? '<span class="pill open">Voting open &mdash; closes end of day August 4, 2026</span>'
+    ? '<span class="pill open">Voting open &mdash; closes end of day August 9, 2026</span>'
     : '<span class="pill closed">Voting closed</span>';
 
   let sections = "";
