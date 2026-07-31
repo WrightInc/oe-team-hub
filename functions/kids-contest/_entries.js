@@ -15,6 +15,7 @@ export const ENTRIES = {
   11: { name: "Sienna",  age: "16",  cat: "12-17" },
   12: { name: "Cameron", age: "4",   cat: "1-5" },
   13: { name: "Justin",  age: "10",  cat: "6-11" },
+  14: { name: "Kayden",  age: "8",   cat: "6-11" },
 };
 
 export const CATS = {
